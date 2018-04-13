@@ -3,7 +3,8 @@ const separators = ["+", "-"];
 const separatorSplitter = new RegExp(`(?=[${separators.join()}])`);
 
 function parseExpression(expression) {
-  return expression.split(separatorSplitter)
+  return expression
+    .split(separatorSplitter)
     .filter(component => component.length !== 0)
     .map(component => {
       if (!separators.includes(component.charAt(0))) {
