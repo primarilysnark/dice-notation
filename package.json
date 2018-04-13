@@ -2,9 +2,9 @@
   "name": "dice-notation",
   "version": "0.0.1",
   "description": "A simple dice notation parser.",
-  "main": "index.js",
+  "main": "src/parser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": {
     "name": "Joshua Starkey",
@@ -14,5 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/primarilysnark/dice-notation.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "expect": "^22.4.3",
+    "mocha": "^5.1.0",
+    "testdouble": "^3.7.0"
+  }
 }
