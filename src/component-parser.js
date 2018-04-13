@@ -1,5 +1,3 @@
-function parseComponent() {
-
-}
+function parseComponent() {}
 
 module.exports = parseComponent;

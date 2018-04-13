@@ -54,11 +54,11 @@ describe("#parseExpression", function() {
     ]);
   });
 
-  it("should parse an empty expression", function () {
+  it("should parse an empty expression", function() {
     expect(parseExpression("")).toEqual([]);
   });
 
-  it("should normalize whitespace from expression components", function () {
+  it("should normalize whitespace from expression components", function() {
     expect(parseExpression("first-second +third")).toEqual([
       {
         sign: "+",
