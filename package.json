@@ -2,7 +2,7 @@
   "name": "dice-notation",
   "version": "0.0.2",
   "description": "A simple dice notation parser.",
-  "main": "src/parser.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha"
   },
