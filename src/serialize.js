@@ -10,7 +10,7 @@ function serialize(components) {
     throw new Error("Components to serialize must be an array.");
   }
 
-  const componentsToSerialize = componentSerializer(components);
+  const componentsToSerialize = components.map(component => componentSerializer(component));
 
   if (componentsToSerialize == null) {
     return "";

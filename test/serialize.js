@@ -19,11 +19,11 @@ describe("#serialize", function() {
   it("should serialize a notation into serialized components", function() {
     serialize(["notation"]);
 
-    td.verify(componentSerializer(["notation"]));
+    td.verify(componentSerializer("notation"));
   });
 
   it("should serialize all serialized components into an expression", function() {
-    td.when(componentSerializer(["notation"])).thenReturn(["serialized-component"]);
+    td.when(componentSerializer("notation")).thenReturn("serialized-component");
 
     serialize(["notation"]);
 
@@ -31,7 +31,7 @@ describe("#serialize", function() {
   });
 
   it("should return the serialized expression", function() {
-    td.when(componentSerializer(["notation"])).thenReturn(["serialized-component"]);
+    td.when(componentSerializer("notation")).thenReturn("serialized-component");
     td.when(expressionSerializer(["serialized-component"])).thenReturn("expression");
 
     expect(serialize(["notation"])).toEqual("expression");
