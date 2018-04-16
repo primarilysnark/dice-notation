@@ -1,7 +1,7 @@
 const rollableVerifier = /(\d+)d(\d+)([a-zA-Z0-9]*)$/;
 const constantVerifier = /\d+$/;
 
-const validRollableModifiers = ["kH", "kL", "kB", "kW"];
+const validRollableModifiers = ["kH", "kL", "kB", "kW", "a", "d"];
 
 function parseConstant({ sign, value }) {
   return {
