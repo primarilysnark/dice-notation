@@ -1,5 +1,5 @@
 const expect = require("expect");
-const serializeExpression = require("../src/expression-serializer");
+const serializeExpression = require("../src/serialize-expression");
 
 describe("#serializeExpression", function() {
   it("should serialize components into an expression", function() {

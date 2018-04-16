@@ -1,5 +1,5 @@
-const componentParser = require("./component-parser");
-const expressionParser = require("./expression-parser");
+const componentParser = require("./parse-component");
+const expressionParser = require("./parse-expression");
 
 function parse(expression) {
   if (expression == null) {

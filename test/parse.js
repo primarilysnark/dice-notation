@@ -7,8 +7,8 @@ describe("#parse", function() {
   let parse;
 
   beforeEach(function() {
-    componentParser = td.replace("../src/component-parser");
-    expressionParser = td.replace("../src/expression-parser");
+    componentParser = td.replace("../src/parse-component");
+    expressionParser = td.replace("../src/parse-expression");
     parse = require("../src/parse");
   });
 

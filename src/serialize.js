@@ -1,5 +1,5 @@
-const componentSerializer = require("./component-serializer");
-const expressionSerializer = require("./expression-serializer");
+const serializeComponent = require("./serialize-component");
+const serializeExpression = require("./serialize-expression");
 
 function serialize(components) {
   if (components == null) {
@@ -10,13 +10,13 @@ function serialize(components) {
     throw new Error("Components to serialize must be an array.");
   }
 
-  const componentsToSerialize = components.map(component => componentSerializer(component));
+  const componentsToSerialize = components.map(component => serializeComponent(component));
 
   if (componentsToSerialize == null) {
     return "";
   }
 
-  return expressionSerializer(componentsToSerialize);
+  return serializeExpression(componentsToSerialize);
 }
 
 module.exports = serialize;

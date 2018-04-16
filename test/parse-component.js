@@ -1,5 +1,5 @@
 const expect = require("expect");
-const parseComponent = require("../src/component-parser");
+const parseComponent = require("../src/parse-component");
 
 describe("#parseComponent", function() {
   it("should parse a component", function() {

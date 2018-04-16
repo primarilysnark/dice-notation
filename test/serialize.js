@@ -7,8 +7,8 @@ describe("#serialize", function() {
   let serialize;
 
   beforeEach(function() {
-    componentSerializer = td.replace("../src/component-serializer");
-    expressionSerializer = td.replace("../src/expression-serializer");
+    componentSerializer = td.replace("../src/serialize-component");
+    expressionSerializer = td.replace("../src/serialize-expression");
     serialize = require("../src/serialize");
   });
 

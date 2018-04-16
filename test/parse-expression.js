@@ -1,5 +1,5 @@
 const expect = require("expect");
-const parseExpression = require("../src/expression-parser");
+const parseExpression = require("../src/parse-expression");
 
 describe("#parseExpression", function() {
   it("should parse an expression", function() {
